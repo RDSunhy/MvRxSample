@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvNameLabel"
+            android:text="姓名："
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_toRightOf="@+id/tvNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvAgeLabel"
+            android:text="年龄："
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvAge"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_toRightOf="@+id/tvAgeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/bnChangeName"
+            android:text="修改姓名"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/bnChangeAge"
+            android:text="修改年龄"
+            android:layout_toRightOf="@+id/bnChangeName"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/bnRequest"
+            android:text="请求接口"
+            android:layout_toRightOf="@+id/bnChangeAge"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvData"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
