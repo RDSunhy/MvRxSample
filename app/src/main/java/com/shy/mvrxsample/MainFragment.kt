@@ -23,7 +23,8 @@ class MainFragment : BaseMvRxFragment(){
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         bnSample.setOnClickListener { findNavController().navigate(R.id.action_mainFragment_to_sampleFragment) }
-
+        bnTransmitData.setOnClickListener { findNavController().navigate(R.id.action_mainFragment_to_firstFragment) }
+        bnSubscribe.setOnClickListener { findNavController().navigate(R.id.action_mainFragment_to_subscribeFragment) }
     }
 
     override fun invalidate() {

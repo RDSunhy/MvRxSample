@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/sampleFragment"
-        android:name="com.shy.mvrxsample.sample.SampleFragment"
+        android:name="com.shy.mvrxsample.mvrx_sample.SampleFragment"
         android:label="SampleFragment" />
     <fragment
         android:id="@+id/mainFragment"
@@ -14,6 +14,36 @@
         android:label="MainFragment">
         <action
             android:id="@+id/action_mainFragment_to_sampleFragment"
-            app:destination="@id/sampleFragment" />
+            app:destination="@id/sampleFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_mainFragment_to_firstFragment"
+            app:destination="@id/firstFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_mainFragment_to_subscribeFragment"
+            app:destination="@id/subscribeFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.shy.mvrxsample.mvrx_transmit_data.FirstFragment"
+        android:label="FirstFragment" >
+        <action
+            android:id="@+id/action_firstFragment_to_secondFragment"
+            app:destination="@id/secondFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.shy.mvrxsample.mvrx_transmit_data.SecondFragment"
+        android:label="SecondFragment" />
+    <fragment
+        android:id="@+id/subscribeFragment"
+        android:name="com.shy.mvrxsample.mvrx_subscribe.SubscribeFragment"
+        android:label="SubscribeFragment" />
 </navigation>

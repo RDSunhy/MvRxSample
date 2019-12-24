@@ -1,6 +1,6 @@
 package com.shy.mvrxsample.http
 
-import com.shy.mvrxsample.sample.ArticleData
+import com.shy.mvrxsample.mvrx_sample.ArticleData
 import io.reactivex.Observable
 import retrofit2.http.GET
 

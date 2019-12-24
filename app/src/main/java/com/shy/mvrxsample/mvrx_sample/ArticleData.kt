@@ -1,4 +1,4 @@
-package com.shy.mvrxsample.sample
+package com.shy.mvrxsample.mvrx_sample
 
 data class ArticleData(
     val `data`: Data,

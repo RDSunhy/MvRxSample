@@ -1,4 +1,4 @@
-package com.shy.mvrxsample.sample
+package com.shy.mvrxsample.mvrx_sample
 
 import android.os.Bundle
 import android.util.Log
@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import com.airbnb.mvrx.*
 import com.shy.mvrxsample.R
 import com.shy.mvrxsample.http.Api
-import com.shy.mvrxsample.http.HttpUtils
 import kotlinx.android.synthetic.main.fragment_sample.*
 
 /**
